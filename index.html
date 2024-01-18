@@ -4,130 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jack is cool</title>
-
+    <title>Under Maintenance</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
             text-align: center;
-            background-color: brown
+            margin: 150px 0;
         }
 
-        /* all images */
-        img {
-            width: 35vw;
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
         }
 
-        /* header image (jack connolly) */
-        header img {
-            width: 80vw;
+        h1 {
+            color: #ff6347;
         }
 
-        header img:hover {
-            animation: blinker 0.05s step-start infinite,
-                spin 5s cubic-bezier(0.01, 0.64, 1, 0.44) infinite,
-                hue-rotate linear infinite;
-        }
-
-        /* spare the epileptic fits */
-        @media (prefers-reduced-motion) {
-            header img:hover {
-                animation: none !important;
-            }
-        }
-
-        ul {
-            list-style: none;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            margin: 0 2em;
-        }
-
-        a:hover {
-            filter: invert(1);
-        }
-
-        /* mobile */
-        @media screen and (max-width: 1200px) {
-            img {
-                width: 80vw;
-            }
-
-            ul {
-                display: block;
-            }
-
-            li {
-                margin: 2em 0;
-            }
-        }
-
-
-        /* animations */
-        @keyframes hue-rotate {
-            0% {
-                filter: hue-rotate(0deg);
-            }
-
-            100% {
-                filter: hue-rotate(360deg);
-            }
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-                filter: hue-rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-                filter: hue-rotate(360deg);
-            }
-        }
-
-        @keyframes blinker {
-            50% {
-                opacity: 50;
-            }
+        p {
+            color: #333;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="src/img/jack.gif" alt="jack connolly">
-    </header>
 
-    <main>
-        <ul>
-            <li>
-                <a href="https://github.com/jdc0101">
-                    <img src="src/img/github.png" alt="github">
-                </a>
-            </li>
+    <div class="container">
+        <h1>Under Maintenance</h1>
+        <p>website is currently undergoing maintenance. Please check back later.</p>
+        <img src="\src\img\JCphoto-netsoc-2298.jpg" alt="Under Maintenance Image" style="max-width: 100%; margin-top: 20px;">
+        <a href="https://www.linkedin.com/in/jdc0101/">linkedin</a>
+    </div>
 
-            <li>
-                <a href="https://www.linkedin.com/in/jdc0101/">
-                    <img src="src/img/linkedin.png" alt="linkedin">
-                </a>
-            </li>
-        </ul>
-    </main>
 </body>
-
-<footer>
-
-btw if your epileptic dont hover over my name innit
-
-</footer>
-
 
 </html>

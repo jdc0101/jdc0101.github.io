@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jack is cool</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: brown
+        }
+
+        /* all images */
+        img {
+            width: 35vw;
+        }
+
+        /* header image (jack connolly) */
+        header img {
+            width: 80vw;
+        }
+
+
+        /* spare the epileptic fits */
+        @media (prefers-reduced-motion) {
+            header img:hover {
+                animation: none !important;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin: 0 2em;
+        }
+
+        a:hover {
+            filter: invert(1);
+            
+        }
+
+        /* mobile */
+        @media screen and (max-width: 1200px) {
+            img {
+                width: 80vw;
+            }
+
+            ul {
+                display: block;
+            }
+
+            li {
+                margin: 2em 0;
+            }
+        }
+
+
+        /* animations */
+        @keyframes hue-rotate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 50;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="src/img/jack.gif" alt="jack connolly">
+        <audio preload="auto">
+            <source src="src/onlymp3.to - Rick Astley Never Gonna Give You Up Official Music Video -dQw4w9WgXcQ-192k-1701783685.mp3" type="audio/mpeg"> //make it play only when hovering over the jack image
+        </audio>
+    </header>
+
+    <main>
+        <ul>
+            <li>
+                <a href="https://github.com/jdc0101">
+                    <img src="src/img/github.png" alt="github">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/jdc0101/">
+                    <img src="src/img/linkedin.png" alt="linkedin">
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+<footer>
+
+btw if your epileptic dont hover over my name innit
+
+</footer>
+
+
+</html>
