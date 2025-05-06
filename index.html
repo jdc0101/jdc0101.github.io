@@ -24,6 +24,7 @@
 
         h1 {
             color: #ff6347;
+            cursor: pointer; /* Optional: makes it obvious it's clickable */
         }
 
         p {
@@ -32,23 +33,24 @@
     </style>
 </head>
 
-<script>
-    function alertTitle () {
-        alert('Why did you click on the title?');
-    }
-    
-    const title = document.querySelector('#title');
-    title.addEventListener('click', alertTitle);
-</script>
-    
 <body>
 
     <div class="container">
-        <h1 id='title'>Under Maintenance</h1>
-        <p>website is currently undergoing maintenance. Please check back later.</p>
+        <h1 id="title">Under Maintenance</h1>
+        <p>Website is currently undergoing maintenance. Please check back later.</p>
         <img src="\src\img\JCphoto-netsoc-2298.jpg" alt="Under Maintenance Image" style="max-width: 100%; margin-top: 20px;">
-        <a href="https://www.linkedin.com/in/jdc0101/">linkedin</a>
+        <br>
+        <a href="https://www.linkedin.com/in/jdc0101/">LinkedIn</a>
     </div>
+
+    <script>
+        function alertTitle() {
+            alert('Why did you click on the title?');
+        }
+
+        const title = document.querySelector('#title');
+        title.addEventListener('click', alertTitle);
+    </script>
 
 </body>
 
